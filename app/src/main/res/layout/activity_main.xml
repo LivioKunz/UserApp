@@ -6,7 +6,43 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="ch.pawi.userapp.MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView android:text="@string/product" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="153dp"
+            android:id="@+id/imageButton"
+            android:background="@drawable/product_tabasco"
+            android:clickable="true"
+            android:baselineAlignBottom="false"
+            android:onClick="b1Clicked" />
+
+        <ImageButton
+            android:layout_width="84dp"
+            android:layout_height="149dp"
+            android:id="@+id/imageButton2"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:clickable="true"
+            android:background="@drawable/product_zucker"
+            android:onClick="b2Clicked" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="165dp"
+            android:id="@+id/imageButton3"
+            android:clickable="true"
+            android:background="@drawable/product_ravioli"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:onClick="b3Clicked" />
+    </GridLayout>
 
 </RelativeLayout>

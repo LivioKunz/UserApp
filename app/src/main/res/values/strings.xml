@@ -2,6 +2,6 @@
     <string name="app_name">UserApp</string>
     <string name="title_activity_main">MainActivity</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="product">Produkt auswählen</string>
     <string name="action_settings">Settings</string>
 </resources>
